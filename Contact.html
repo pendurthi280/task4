@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="task4.js"></script>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+   <h2>TECHNOVERT </h2>
+   <ul id="unordered">
+     <li ><a href="task4.html">HOME</a></li>
+     <li ><a href="#">SERVICE</a></li>
+     <li ><a href="Careers.html">CAREERS</a></li>
+     <li ><a href="#"  class="active">CONTACT</a></li>
+    <li class="blog"><img src="blog-icon.png " alt="blogicon"  ></li>
+   </ul>
+    <form  name="Form" id="form"  >
+        <table>
+        <tr>
+           <td><lable>My Name:</lable></td>
+           <td> <input type="text" required  id="name" name="name"></td>
+           <td><lable id="error" class="colors">* </lable></td>
+        </tr>
+        <tr>
+            <td><lable>My Email Address:</lable> </td>
+            <td><input type="text" required   id="email"  ></td>
+            <td><lable id="error1" class="colors">*</lable></td>
+        </tr>
+        <tr>   
+            <td><label>My Telephone Number:</label></td>
+            <td> <input type="text"   id="phone" ></td>
+        </tr>
+        <tr>    
+            <td><label>My Organization Name:</label></td>
+            <td> <input type="text" required  id="organization"   ></td>
+            <td><lable  id="error2" class="colors">*</lable></td>
+        </tr>
+        <tr>
+            <td> <lable>Gender</lable></td>
+            <td>
+                    <input type="radio" name="gender"  onclick="validategender()"  value="male" id="male">male
+                    <input type="radio" name="gender"  onclick="validategender()" value="female" id="female">female
+            </td>
+        </tr>
+        <tr>
+            <td><lable>My Cite:</lable></td>
+            <td><input type="text"  id="city"></td>
+         </tr> 
+        <tr> 
+            <td><lable>My State or Province:</lable></td>
+            <td><select name="Select"  id="dropdown" onclick="promo()" title="selectstate" >
+                        <option>Select state or Province</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal pradesh">Arunachal pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="kerela">kerela</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                </select>
+            </td>
+            <td><label  id="promotext"></label></td>
+        </tr>
+        <tr>
+            <td> <lable>Please Contact Me By</lable></td>
+            <td>
+                    <input type="radio" name="contact1"   value="email" id="radio"> Email<br>
+                    <input type="radio" name="contact1"   value="phone" id="contact">Phone<br>
+                    <input type="radio" name="contact1"   value="both" id="contact">Both<br>
+            </td>
+        </tr>
+        <tr>    
+            <td><lable>Promotion Code:</lable></td>
+            <td><input type="text"  id="code"></td>
+        </tr>
+        <tr>   
+            <td><label>Optipnal Information</label></td>
+
+        </tr>
+        <tr>
+           <td colspan="2">This information is optional but it helps us to serve you better.</td>
+        </tr>   
+        <tr>
+           <td><label>My Website Adress is:</label></td>
+           <td><input type="text" id="address"></td>
+        </tr>  
+    </table>       
+           <lable>Tell Us More About Your Organization:</lable><br>
+           <textarea  name="aboutorgnization" rows="5" cols="50"  id="aboutorgnization"></textarea><br>
+           <lable>What i'd really like to know is:</lable><br>
+           <textarea  name="aboutorgnization" rows="5" cols="50" id="textarea"></textarea><br>
+           <input type="button" value="Send Message"   onclick=" validate()" >
+           <input type="button" value="clearform" name="button"   onclick="clearform()" class=".clear"> 
+           <p id="p"></p>
+ 
+       
+
+          
+    </form>
+</body>
+</html>
