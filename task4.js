@@ -23,33 +23,33 @@ function validate()
    var website=document.getElementById("address");
    if(username.value=="")
    {
-     document.getElementById("error").innerHTML ="enter a name";
+     document.getElementById("error").innerText ="enter a name";
    }
    if(useremail .value=="")
    {
-     document.getElementById("error1").innerHTML ="enter a email";
+     document.getElementById("error1").innerText ="enter a email";
    }
    else 
    {
       if( useremail.value.match(mailformat))
       {
-        document.getElementById("error1").innerHTML ="correct";
+        document.getElementById("error1").innerText ="correct";
       }
       else
       {
-        document.getElementById("error1").innerHTML ="enter correct mail id";
+        document.getElementById("error1").innerText="enter correct mail id";
       }
 
    }
 
    if(Organization.value=="")
    {
-     document.getElementById("error2").innerHTML ="enter name of org";
+     document.getElementById("error2").innerText ="enter name of org";
    }
     
    if(website.value=="")
    {
-    document.getElementById("error3").innerHTML ="enter name of website";
+    document.getElementById("error3").innerText ="enter name of website";
    }
     
 }
@@ -89,12 +89,12 @@ function validate()
   function clearform()
       {
         document.getElementById("form").reset();
-        if( document.getElementById("error").innerHTML == "enter a name"||document.getElementById("error1").innerHTML == "enter a email"||document.getElementById("error2").innerHTML == "enter name of org"||document.getElementById("error3").innerHTML == "enter name of website")
+        if( document.getElementById("error").innerText == "enter a name"||document.getElementById("error1").innerText == "enter a email"||document.getElementById("error2").innerText == "enter name of org"||document.getElementById("error3").innerHTML == "enter name of website")
          {
-          document.getElementById("error").innerHTML = "*";
-          document.getElementById("error1").innerHTML = "*";
-          document.getElementById("error2").innerHTML = "*";
-          document.getElementById("error3").innerHTML = "*";
+          document.getElementById("error").innerText = "*";
+          document.getElementById("error1").innerText= "*";
+          document.getElementById("error2").innerText= "*";
+          document.getElementById("error3").innerText = "*";
 
          }
       
