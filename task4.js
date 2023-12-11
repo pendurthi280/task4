@@ -18,7 +18,7 @@ function validate()
 {
    var username = document.getElementById("name");
    var useremail = document.getElementById("email");
-   var mailformat = /^[a-zA-z0-9.-]+@[a-zA-z0-9.-]+\.[a-z]{2}\.[a-z]{2}$/;
+   var mailformat = /^[a-zA-z0-9.-]+@[a-zA-z0-9.-]+\.[a-z]{2,3}\.[a-z]{2}$/;
    var  Organization = document.getElementById("organization");
    var website=document.getElementById("address");
    if(username.value=="")
