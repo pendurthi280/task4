@@ -79,7 +79,7 @@ li a:hover, li a.active
 	background-color:rgb(238, 165, 29);
   color: rgb(12, 12, 12);
   border-left: 5px solid rgb(255, 255, 255);
-  padding-left: 15px;
+  padding-left: 10px;
   
  
 	
@@ -245,5 +245,3 @@ div ul li::before
   border-bottom: 1px solid black;
   border-right: 1px solid black;
 }
-
-
