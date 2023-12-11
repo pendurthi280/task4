@@ -18,7 +18,9 @@ function validate()
 {
    var username = document.getElementById("name");
    var useremail = document.getElementById("email");
+   var mailformat = /^[a-zA-z0-9.-]+@[a-zA-z0-9.-]+\.[a-z]{2}\.[a-z]{2}$/;
    var  Organization = document.getElementById("organization");
+   var website=document.getElementById("address");
    if(username.value=="")
    {
      document.getElementById("error").innerHTML ="enter a name";
@@ -27,10 +29,29 @@ function validate()
    {
      document.getElementById("error1").innerHTML ="enter a email";
    }
+   else 
+   {
+      if( useremail.value.match(mailformat))
+      {
+        document.getElementById("error1").innerHTML ="correct";
+      }
+      else
+      {
+        document.getElementById("error1").innerHTML ="enter correct mail id";
+      }
+
+   }
+
    if(Organization.value=="")
    {
      document.getElementById("error2").innerHTML ="enter name of org";
    }
+    
+   if(website.value=="")
+   {
+    document.getElementById("error3").innerHTML ="enter name of website";
+   }
+    
 }
 
 /*function clearform()
@@ -68,38 +89,26 @@ function validate()
   function clearform()
       {
         document.getElementById("form").reset();
-        if( document.getElementById("error").innerHTML == "enter a name"||document.getElementById("error1").innerHTML == "enter a email"||document.getElementById("error3").innerHTML == "enter name of org")
+        if( document.getElementById("error").innerHTML == "enter a name"||document.getElementById("error1").innerHTML == "enter a email"||document.getElementById("error2").innerHTML == "enter name of org"||document.getElementById("error3").innerHTML == "enter name of website")
          {
           document.getElementById("error").innerHTML = "*";
           document.getElementById("error1").innerHTML = "*";
           document.getElementById("error2").innerHTML = "*";
+          document.getElementById("error3").innerHTML = "*";
+
          }
       
       }
 
-
-
-
-
-     /*function function1()
-     {
-     let inputs = document.getElementsByTagName('input');
-      for(i = 0; i <inputs.length; i++) 
-      {
-          inputs.value="";
-      }
-    }*/
-
-   
-    /*var inputs=document.querySelectorAll('input');*/
     
     
 
 
 
-    function promo(){
+    function promo()
+    {
       
       var state = document.getElementById("dropdown").value;
       var promo = state + " - PROMO";
-      document.getElementById("promotext").innerHTML = promo;
+      document.getElementById("code").value = promo;
     }
