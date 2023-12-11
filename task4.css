@@ -55,12 +55,13 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  text-decoration: none;
-  font-family: Bahnschrift SemiBold ;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 5px;
+  text-decoration: none;
+  font-family: Bahnschrift SemiBold ;
+ 
 
 
 }
